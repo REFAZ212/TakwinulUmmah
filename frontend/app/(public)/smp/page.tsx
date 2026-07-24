@@ -11,19 +11,16 @@ export const metadata: Metadata = {
 };
 
 const TEACHERS = [
-  { name: "Ust. Muhammad Fadli, S.Pd.", subject: "Bahasa Indonesia", img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop" },
-  { name: "Ustzh. Aisyah Rahmah, S.Pd.I", subject: "Al-Quran & Hadits", img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=200&auto=format&fit=crop" },
-  { name: "Ust. Rizky Abdullah, M.Pd.", subject: "Matematika", img: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200&auto=format&fit=crop" },
-  { name: "Ustzh. Nurhaliza, S.Pd.", subject: "Bahasa Inggris", img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop" },
-  { name: "Ust. Budi Santoso, S.Pd.", subject: "IPA (Fisika & Biologi)", img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" },
-  { name: "Ustzh. Siti Aminah, S.Pd.I", subject: "Fiqih & Aqidah", img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop" },
-  { name: "Ust. Ahmad Hidayat, S.Kom.", subject: "Prakarya & Komputer", img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop" },
-  { name: "Ustzh. Rahmawati, S.Pd.", subject: "IPS (Sejarah & Geografi)", img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop" },
-  { name: "Ust. Muhammad Iqbal, S.Pd.", subject: "PJOK (Olahraga)", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" },
-  { name: "Ustzh. Fatimah Azzahra, S.Pd.", subject: "Seni & Budaya", img: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=200&auto=format&fit=crop" },
-  { name: "Ust. Abdullah Fauzi, Lc.", subject: "Bahasa Arab", img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&auto=format&fit=crop" },
-  { name: "Ustzh. Nur Aini, S.Pd.I", subject: "Tahfidz Quran", img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=200&auto=format&fit=crop" },
-  { name: "Ust. Hendra Prasetyo, S.Pd.", subject: "Matematika & Olimpiade", img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop" },
+  { name: "Bagus Wiguna, S.Sn", subject: "Prakarya, Seni dan Budaya" },
+  { name: "Didin Jaenudin, S.Pd", subject: "Bahasa Indonesia" },
+  { name: "Diki Julkarnaen, S.Pd", subject: "PJOK, Seni dan Budaya" },
+  { name: "Eka Chandra Ramdani, S.Pd", subject: "PPKn, Seni Rupa" },
+  { name: "Esa Krisna Kusnandar, S.Pd.I", subject: "PAI dan Budi Pekerti" },
+  { name: "Rendi Fauzi", subject: "Informatika" },
+  { name: "Rida Rosanti, S.Pd", subject: "IPS" },
+  { name: "Rissa Hanifia Khoerunnisa, S.Pd", subject: "Matematika" },
+  { name: "Toni Rosadi, S.Ag", subject: "Muatan Lokal, PAI" },
+  { name: "Tovan Andrian, S.Pd", subject: "Bahasa Inggris, IPA" },
 ];
 
 const FACILITIES = [
@@ -88,7 +85,7 @@ export default function SMPPage() {
           <div className="text-center">
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-deep">KEPALA SEKOLAH</span>
             <h2 className="mt-2 font-display text-2xl font-bold text-deep lg:text-3xl">
-              Ust. Muhammad Fadli, S.Pd.
+              Riko Iskandar, S.Pd.I
             </h2>
             <p className="mt-2 text-sm text-ink-soft">Kepala Sekolah SMP IT Takwinul Ummah</p>
           </div>
@@ -96,27 +93,26 @@ export default function SMPPage() {
             <div className="shrink-0">
               <div className="overflow-hidden rounded-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop"
-                  alt="Ust. Muhammad Fadli, S.Pd."
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop"
+                  alt="Riko Iskandar, S.Tr.A.B., S.Pd.I"
                   className="h-64 w-48 object-cover sm:h-72 sm:w-56"
                 />
               </div>
             </div>
             <div className="text-center sm:text-left">
               <p className="text-sm leading-relaxed text-ink-soft">
-                Ust. Muhammad Fadli, S.Pd. memimpin SMP IT Takwinul Ummah dengan dedikasi
-                tinggi dalam mengembangkan pendidikan yang holistik. Beliau berkomitmen
-                untuk menciptakan lingkungan belajar yang kondusif, di mana setiap siswa
-                dapat tumbuh secara akademik dan spiritual.
+                Riko Iskandar, S.Tr.A.B., S.Pd.I memimpin SMP IT Takwinul Ummah dengan
+                visi pendidikan yang holistik — menggabungkan keunggulan akademik dengan
+                pembentukan karakter Islami.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-ink-soft">
-                Dengan pengalaman lebih dari 15 tahun dalam dunia pendidikan, beliau
-                terus berupaya memperkuat program tahfidz, meningkatkan mutu pengajaran,
-                dan membangun kerja sama yang baik dengan orang tua siswa.
+                Dengan latar belakang pendidikan agama dan pengalaman di dunia pendidikan,
+                beliau berkomitmen memperkuat program tahfidz, meningkatkan mutu pengajaran,
+                serta membangun kerja sama yang baik dengan orang tua siswa.
               </p>
               <div className="mt-6 grid grid-cols-3 gap-3">
                 <div className="rounded-xl border border-border bg-white p-3 text-center">
-                  <p className="font-utility text-lg font-bold text-deep">15+</p>
+                  <p className="font-utility text-lg font-bold text-deep">10+</p>
                   <p className="mt-1 text-[11px] text-ink-muted">Tahun Pengalaman</p>
                 </div>
                 <div className="rounded-xl border border-border bg-white p-3 text-center">
@@ -139,12 +135,9 @@ export default function SMPPage() {
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {TEACHERS.map((t) => (
             <div key={t.name} className="flex items-center gap-3 rounded-xl border border-border bg-white p-3">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={t.img}
-                alt={t.name}
-                className="h-14 w-14 shrink-0 rounded-full object-cover"
-              />
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-deep/10 text-sm font-bold text-deep">
+                {t.name.split(" ").slice(0, 2).map((w) => w[0]).join("")}
+              </div>
               <div className="min-w-0">
                 <p className="truncate font-display text-sm font-semibold text-deep">{t.name}</p>
                 <p className="truncate text-xs text-ink-muted">{t.subject}</p>
