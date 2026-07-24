@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback, type DragEvent } from "react";
-import { Image as ImageIcon, Upload, FileIcon, ExternalLink } from "lucide-react";
+import { Image as ImageIcon, Upload, FileIcon, ExternalLink, Plus } from "lucide-react";
 import { adminApi } from "@/lib/api";
 import {
   Button,
@@ -226,9 +226,11 @@ export default function MediaPage() {
                 : "Unggah file pertama untuk memulai."
             }
             action={
-              !search
-                ? { label: "Unggah File", onClick: () => fileRef.current?.click() }
-                : undefined
+              !search ? (
+                <Button onClick={() => fileRef.current?.click()}>
+                  <Plus size={16} /> Unggah File
+                </Button>
+              ) : undefined
             }
           />
         ) : (
