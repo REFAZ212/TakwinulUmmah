@@ -23,7 +23,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-[85vh] overflow-hidden bg-ink">
+    <section className="relative h-[75vh] overflow-hidden bg-ink">
       {/* Slideshow */}
       <div className="absolute inset-0">
         {SLIDES.map((slide, i) => (
