@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+/* ============================================
+   DESIGN TOKENS — Yayasan Takwinul Ummah
+   Clean, institutional design system
+   ============================================ */
+
+:root {
+  /* --- Primary: Green --- */
+  --color-deep: #1a7a50;
+  --color-deep-2: #146040;
+  --color-sage: #2e9a62;
+
+  /* --- Accent: Gold --- */
+  --color-gold: #c9a227;
+  --color-gold-light: #b8921f;
+
+  /* --- Neutrals --- */
+  --color-cream: #fafaf8;
+  --color-sand: #eae8e1;
+  --color-surface: #ffffff;
+
+  /* --- Text --- */
+  --color-ink: #1a2b24;
+  --color-ink-soft: #5f7069;
+  --color-ink-muted: #8a9690;
+
+  /* --- Borders & Dividers --- */
+  --color-border: #ddd9d0;
+  --color-divider: #eae8e1;
+
+  /* --- Fonts --- */
+  --font-display: "Lato", "Helvetica Neue", Arial, ui-sans-serif, sans-serif;
+  --font-body: "Open Sans", "Helvetica Neue", Arial, ui-sans-serif, sans-serif;
+  --font-utility: "Roboto", "Helvetica Neue", Arial, ui-sans-serif, sans-serif;
+}
+
+@theme inline {
+  --color-deep: var(--color-deep);
+  --color-deep-2: var(--color-deep-2);
+  --color-sage: var(--color-sage);
+  --color-cream: var(--color-cream);
+  --color-sand: var(--color-sand);
+  --color-gold: var(--color-gold);
+  --color-gold-light: var(--color-gold-light);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-ink-muted: var(--color-ink-muted);
+  --color-border: var(--color-border);
+  --color-divider: var(--color-divider);
+  --color-surface: var(--color-surface);
+  --color-accent-yellow: var(--color-gold);
+  --color-accent-orange: var(--color-gold);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-utility: var(--font-utility);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, .font-display { font-family: var(--font-display); }
+.font-utility { font-family: var(--font-utility); }
+
+/* Selection */
+::selection {
+  background: var(--color-deep);
+  color: var(--color-surface);
+}
+
+/* Focus ring */
+:focus-visible {
+  outline: 2px solid var(--color-deep);
+  outline-offset: 2px;
+}
+
+/* Smooth transitions globally */
+a, button { transition: color 0.15s, background-color 0.15s, border-color 0.15s, box-shadow 0.15s; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
