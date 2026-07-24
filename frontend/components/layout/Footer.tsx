@@ -11,7 +11,7 @@ const SOCIAL_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border bg-white">
+    <footer className="bg-deep text-white">
       <div className="mx-auto max-w-7xl px-5 py-16 lg:px-8">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
@@ -19,9 +19,9 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/logo-yayasan.png" alt="Logo" className="h-9 w-9 rounded-full object-cover" />
-              <span className="font-display text-base font-bold text-deep">{SITE.name}</span>
+              <span className="font-display text-base font-bold text-gold-light">{SITE.name}</span>
             </div>
-            <p className="mt-4 text-sm leading-relaxed text-ink-soft">
+            <p className="mt-4 text-sm leading-relaxed text-white/60">
               Mendidik generasi Qur&apos;ani yang unggul dalam ilmu, kokoh dalam akhlak, sejak 1998.
             </p>
             <div className="mt-4 flex gap-2">
@@ -32,7 +32,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="flex h-8 w-8 items-center justify-center rounded-lg border border-border text-ink-muted transition-colors hover:border-deep hover:text-deep"
+                  className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/15 text-white/50 transition-colors hover:border-gold-light hover:text-gold-light"
                 >
                   {s.label === "YouTube" && (
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
@@ -53,41 +53,41 @@ export default function Footer() {
 
           {/* Institusi */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-muted">Institusi</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-white/40">Institusi</h4>
             <ul className="mt-4 space-y-2.5 text-sm">
-              <li><Link href="/" className="text-ink-soft hover:text-deep">Pondok Pesantren</Link></li>
-              <li><Link href="/smp" className="text-ink-soft hover:text-deep">SMP IT Takwinul Ummah</Link></li>
-              <li><Link href="/sma" className="text-ink-soft hover:text-deep">SMA IT Takwinul Ummah</Link></li>
-              <li><Link href="/about" className="text-ink-soft hover:text-deep">Tentang Yayasan</Link></li>
+              <li><Link href="/" className="text-white/60 hover:text-gold-light transition-colors">Pondok Pesantren</Link></li>
+              <li><Link href="/smp" className="text-white/60 hover:text-gold-light transition-colors">SMP IT Takwinul Ummah</Link></li>
+              <li><Link href="/sma" className="text-white/60 hover:text-gold-light transition-colors">SMA IT Takwinul Ummah</Link></li>
+              <li><Link href="/about" className="text-white/60 hover:text-gold-light transition-colors">Tentang Yayasan</Link></li>
             </ul>
           </div>
 
           {/* Tautan */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-muted">Tautan</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-white/40">Tautan</h4>
             <ul className="mt-4 space-y-2.5 text-sm">
-              <li><Link href="/news" className="text-ink-soft hover:text-deep">Berita</Link></li>
-              <li><Link href="/announcements" className="text-ink-soft hover:text-deep">Pengumuman</Link></li>
-              <li><Link href="/admissions" className="text-ink-soft hover:text-deep">Pendaftaran</Link></li>
-              <li><Link href="/downloads" className="text-ink-soft hover:text-deep">Unduhan</Link></li>
+              <li><Link href="/news" className="text-white/60 hover:text-gold-light transition-colors">Berita</Link></li>
+              <li><Link href="/announcements" className="text-white/60 hover:text-gold-light transition-colors">Pengumuman</Link></li>
+              <li><Link href="/admissions" className="text-white/60 hover:text-gold-light transition-colors">Pendaftaran</Link></li>
+              <li><Link href="/downloads" className="text-white/60 hover:text-gold-light transition-colors">Unduhan</Link></li>
             </ul>
           </div>
 
           {/* Kontak */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-muted">Kontak</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-white/40">Kontak</h4>
             <ul className="mt-4 space-y-3 text-sm">
-              <li className="flex gap-2.5 text-ink-soft"><MapPin size={15} className="mt-0.5 shrink-0 text-ink-muted" /> {CONTACT.address}</li>
-              <li className="flex gap-2.5 text-ink-soft"><Phone size={15} className="mt-0.5 shrink-0 text-ink-muted" /> {CONTACT.phone}</li>
-              <li className="flex gap-2.5 text-ink-soft"><Mail size={15} className="mt-0.5 shrink-0 text-ink-muted" /> {CONTACT.email}</li>
+              <li className="flex gap-2.5 text-white/60"><MapPin size={15} className="mt-0.5 shrink-0 text-white/40" /> {CONTACT.address}</li>
+              <li className="flex gap-2.5 text-white/60"><Phone size={15} className="mt-0.5 shrink-0 text-white/40" /> {CONTACT.phone}</li>
+              <li className="flex gap-2.5 text-white/60"><Mail size={15} className="mt-0.5 shrink-0 text-white/40" /> {CONTACT.email}</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-border">
+      <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-5 py-5 lg:px-8">
-          <p className="text-center text-xs text-ink-muted">
+          <p className="text-center text-xs text-white/40">
             &copy; {new Date().getFullYear()} {SITE.name}. Seluruh hak cipta dilindungi.
           </p>
         </div>
